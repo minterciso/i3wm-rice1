@@ -177,6 +177,23 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+#bar {
+#	position top
+#	output HDMI-0
+#        status_command i3status
+#}
+
+# Add a extra customizations
+#bar {
+#	mode hide
+#	hidden_state hide
+#	modifier Mod1
+#	position top
+#	output eDP-1-1
+#	status_command i3status --config ~/.config/i3/small_bar.cfg
+#}
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec "xcompmgr -c -f -n"
 exec "setxkbmap -layout us -variant intl"
@@ -201,10 +218,11 @@ smart_gaps on
 smart_borders on
 hide_edge_borders smart_no_gaps
 
-exec "conky -c ~/.config/conky/conkyrc1"
-exec "conky -c ~/.config/conky/conkyrc2"
-exec "conky -c ~/.config/conky/conkyrc3"
-exec "conky -c ~/.config/conky/conkyrc4"
-exec "conky -c ~/.config/conky/conkyrc5"
+exec "conky -c ~/Pictures/Themes/Conky/conkyrc1"
+exec "conky -c ~/Pictures/Themes/Conky/conkyrc2"
+exec "conky -c ~/Pictures/Themes/Conky/conkyrc3"
+exec "conky -c ~/Pictures/Themes/Conky/conkyrc4"
+exec "conky -c ~/Pictures/Themes/Conky/conkyrc5"
+exec "conky -c ~/Pictures/Themes/Conky/conkyrc6"
 exec "albert"
 exec "xscreensaver -nosplash"
