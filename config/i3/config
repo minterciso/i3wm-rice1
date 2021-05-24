@@ -197,7 +197,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec "xcompmgr -c -f -n"
 exec "setxkbmap -layout us -variant intl"
-exec "feh ~/Pictures/Wallpapers/cyberpunk_by_theblackgirl1d_d7pvjmc.jpg --bg-fill Pictures/Wallpapers/push_the_button_by_antzen.jpg --bg-fill"
+exec "feh ~/Pictures/Wallpapers/neon_sunset_4k_by_axiomdesign_dbqddb9.png --bg-fill ~/Pictures/Wallpapers/neon_sunset_by_axiomdesign_d9cs997.jpg --bg-fill"
 bindsym $mod+Shift+u exec "setxkbmap -layout us -variant intl"
 bindsym $mod+Shift+b exec "setxkbmap -layout br"
 bindsym $mod+Control+Shift+l exec "i3lock-fancy"
@@ -206,6 +206,13 @@ workspace $ws3 output HDMI-0
 workspace $ws5 output eDP-1-1
 workspace $ws6 output eDP-1-1
 workspace $ws9 output HDMI-0
+exec "conky -c ~/Pictures/Themes/Conky/conkyrc1"
+exec "conky -c ~/Pictures/Themes/Conky/conkyrc2"
+exec "conky -c ~/Pictures/Themes/Conky/conkyrc3"
+exec "conky -c ~/Pictures/Themes/Conky/conkyrc4"
+exec "conky -c ~/Pictures/Themes/Conky/conkyrc5"
+exec "albert"
+exec "xscreensaver -nosplash"
 # I3 gaps
 for_window [class="^.*"] border pixel 0
 
@@ -218,11 +225,3 @@ smart_gaps on
 smart_borders on
 hide_edge_borders smart_no_gaps
 
-exec "conky -c ~/Pictures/Themes/Conky/conkyrc1"
-exec "conky -c ~/Pictures/Themes/Conky/conkyrc2"
-exec "conky -c ~/Pictures/Themes/Conky/conkyrc3"
-exec "conky -c ~/Pictures/Themes/Conky/conkyrc4"
-exec "conky -c ~/Pictures/Themes/Conky/conkyrc5"
-exec "conky -c ~/Pictures/Themes/Conky/conkyrc6"
-exec "albert"
-exec "xscreensaver -nosplash"
